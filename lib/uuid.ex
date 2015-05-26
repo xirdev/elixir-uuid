@@ -159,7 +159,7 @@ defmodule UUID do
 
   """
   def uuid1(format \\ :default) do
-    uuid1(uuid1_clockseq(), uuid1_node(), format)
+    uuid1(uuid1_clockseq(), :crypto.rand_bytes(6), format)
   end
 
   @doc """
@@ -170,7 +170,7 @@ defmodule UUID do
   ## Examples
 
   ```elixir
-  iex> UUID.uuid1()
+  iex> UUID.uuid1()github.com/xirdev/elixir-uuid
   "cdfdaf44-ee35-11e3-846b-14109ff1a304"
 
   iex> UUID.uuid1(:default)
