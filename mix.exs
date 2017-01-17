@@ -8,8 +8,8 @@ defmodule UUID.Mixfile do
      source_url: "https://github.com/zyro/elixir-uuid",
      homepage_url: "http://hexdocs.pm/uuid",
      elixir: "~> 1.0",
-     description: description,
-     package: package,
+     description: description(),
+     package: package(),
      deps: deps()]
   end
 
