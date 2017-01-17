@@ -10,7 +10,7 @@ defmodule UUID.Mixfile do
      elixir: "~> 1.0",
      description: description,
      package: package,
-     deps: deps]
+     deps: deps()]
   end
 
   # Application configuration.
